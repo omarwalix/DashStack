@@ -15,6 +15,7 @@ export default function RootLayout({ children }) {
             <ConfirmModalWrapper />
           </ModalProvider>
         </AuthProvider>
+        <Analytics />
       </body>
     </html>
   );
