@@ -1,5 +1,6 @@
 "use client";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react"
 import { ModalProvider, useModal } from "@/context/ModalContext";
 import ConfirmModal from "@/components/ConfirmModal";
 import { AuthProvider } from "@/context/AuthContext";
