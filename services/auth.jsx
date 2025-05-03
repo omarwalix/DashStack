@@ -11,7 +11,7 @@ export const login = async (email, password) => {
 
     if (!response.ok) {
       const errorData = await response.json();
-      throw new Error(errorData.message || "Login failed");
+      throw new Error(errorData.message || "invalid email or password");
     }
 
     const { token, user } = await response.json();
@@ -51,7 +51,7 @@ export const logout = async () => {
 
     if (!response.ok) {
       const errorData = await response.json();
-      throw new Error(errorData.message || "Login failed");
+      throw new Error(errorData.message || "invalid email or password");
     }
   } catch (error) {
     console.error("Logout error:", error);

@@ -62,7 +62,7 @@ function EditProductPage() {
         setInitialProduct(data);
         setImageFile(data.image_url);
       } catch (error) {
-        toast.error("Failed to fetch product data");
+        toast.error("This item has been removed.");
         console.error("Error fetching product:", error);
         router.push("/Products");
       } finally {

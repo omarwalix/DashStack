@@ -42,10 +42,10 @@ export const AuthProvider = ({ children }) => {
 
       return formattedUser;
     } catch (error) {
-      console.error("Login failed:", error);
+      console.error("invalid email or password:", error);
       setUser(null);
       localStorage.removeItem("user");
-      throw new Error(error.message || "Login failed. Please try again.");
+      throw new Error(error.message || "invalid email or password. Please try again.");
     }
   };
 
